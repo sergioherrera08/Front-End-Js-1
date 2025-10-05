@@ -1,0 +1,141 @@
+style.css
+
+/* Reset de css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+html {
+  /* Sin congiguracion el rem vale: */
+  /* 1rem = 16px */
+
+  /* Para que 1 rem = 10px */
+  font-size: 30.5%;
+}
+
+body {
+  font-family: <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">;
+  background-color:wheat;
+}
+
+ display: flex;
+  flex-direction: column;
+
+/* selecciono mas de un selector a la vez para aplicar mismos estilos */
+.header,
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+.footer {
+  background-color: chocolate;
+  /* le doy al header y footer 10vh para darle 80 al main */
+  /* esto lo hago provisoriamente, pero podemos no querer que el footer */
+  height: 20%;
+  font-size: smaller;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10vb;
+  border-radius: 10%;
+  box-shadow: none;
+}
+
+/* Algunas clases con BEM, a modo ejemplo */
+.header__logo {
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+}
+
+/* Algunas clases con BEM, a modo ejemplo */
+.header__nav {
+  background-color: maroon;
+  text-decoration: gray;
+}
+
+.header__nav ul {
+  /* quitamos las viñetas de la lista (si no tuvieramos el reset de css, las verian) */
+  list-style: none;
+}
+.header__nav ul li {
+  font-size: 2rem;
+}
+
+main {
+  /* cuando establecemos un espacio determinado para header, main y footer puede haber desbordes */
+  /* por ahora les dimos vh solo para ver como tenemos esas grandes secciones separadas */
+  border: 2px solid none;
+  width: 100%;
+}
+
+.titulo-home {
+  color: red;
+  font-size: 8rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.productos-home h2 {
+  font-size: 5rem;
+}
+
+/* Agregamos la clase para las tarjetas de productos */
+.tarjeta-producto {
+  background-color:goldenrod;
+  width: 20%;
+}
+
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+.productos-home img {
+  width: 30rem;
+}
+
+/* .footer {
+  background-color:violet;
+} */
+
+.footer p { 
+  color: midnightblue;
+  text-align: center;
+  border: none;
+}
+
+footer nav ul {
+  /* quitamos las viñetas de la lista (si no tuvieramos el reset de css, las verian) */
+  list-style: none;
+}
+
+footer nav ul li {
+  font-size: 2rem;
+}
+
+/* Agregamos estilos a otra pagina */
+/* -------------------------------------------------------------------------- */
+/*                               pagina contacto                              */
+/* -------------------------------------------------------------------------- */
+.titulo-contacto {
+  color: green;
+}
+
+  .Home {
+  color: brown;
+}
+
+.nav-list{
+        list-style: none;
+}
+    
+  .nav-list a {
+        text-decoration: none;
+        color:royalblue
+  }
+
+  
